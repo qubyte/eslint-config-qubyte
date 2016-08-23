@@ -3,7 +3,7 @@
 'use strict';
 
 module.exports = {
-  extends: 'eslint-config-vizia',
+  extends: 'eslint-config-qubyte',
   env: {
     es6: true
   },
