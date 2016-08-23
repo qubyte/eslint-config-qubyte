@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-qubyte",
+  "version": "0.0.0",
+  "description": "My personal linter configs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": "github:qubyte/eslint-config-qubyte",
+  "keywords": [
+    "lint",
+    "qubyte",
+    "eslint",
+    "config"
+  ],
+  "author": "Mark Stanley Everitt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qubyte/eslint-config-qubyte/issues"
+  },
+  "homepage": "https://github.com/qubyte/eslint-config-qubyte#readme",
+  "devDependencies": {
+    "eslint": "3.3.1"
+  }
+}
