@@ -8,7 +8,8 @@ module.exports = {
     Promise: true,
     Map: true,
     Set: true,
-    WeakMap: true
+    WeakMap: true,
+    WeakSet: true
   },
   rules: {
     // possible errors
@@ -24,7 +25,7 @@ module.exports = {
     'no-empty-character-class': 'error',
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
-    'no-extra-parens': 'error',
+    'no-extra-parens': 'off',
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
     'no-inner-declarations': 'error',
@@ -38,6 +39,7 @@ module.exports = {
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
+    'no-unsafe-negation': 'error',
     'use-isnan': 'error',
     'valid-jsdoc': 'off',
     'valid-typeof': 'error',
@@ -68,6 +70,7 @@ module.exports = {
     'no-extra-label': 'error',
     'no-fallthrough': 'off',
     'no-floating-decimal': 'error',
+    'no-global-assign': 'error',
     'no-implicit-coercion': 'off',
     'no-implicit-globals': 'off',
     'no-implied-eval': 'error',
@@ -201,6 +204,7 @@ module.exports = {
     'require-jsdoc': 'off',
     'semi': 'error',
     'semi-spacing': ['error', { before: false, after: true }],
+    'sort-keys': 'off',
     'sort-vars': 'off',
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', { anonymous: 'always', named: 'never' }],
