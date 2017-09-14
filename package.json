@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/qubyte/eslint-config-qubyte#readme",
   "devDependencies": {
-    "eslint": "3.3.1"
+    "eslint": "4.6.1"
   }
 }
