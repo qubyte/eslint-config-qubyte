@@ -1,5 +1,7 @@
 # eslint-config-qubyte
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/qubyte/eslint-config-qubyte.svg)](https://greenkeeper.io/)
+
 Common ESLint [shareable config][1] files for qubyte. Originally based on
 [eslint-config-vizia][2].
 
