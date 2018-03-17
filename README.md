@@ -49,6 +49,11 @@ provided for ES2015 code:
 
 Internally this config extends the base qubyte config.
 
+## ES2017 and ES2018
+
+These are mostly the same as ES2015, but with updated parser configuration, so
+that ESLint doesn't fall over around things like object spreading.
+
 ## Tests
 
 Tests often look like bad code. They're prone to many more lines of code per
