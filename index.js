@@ -3,6 +3,7 @@
 'use strict';
 
 module.exports = {
+  extends: 'eslint:recommended',
   globals: {
     // well supported ES2015 globals
     Promise: true,
@@ -104,6 +105,7 @@ module.exports = {
     'no-useless-escape': 'error',
     'no-void': 'error',
     'no-with': 'error',
+    'prefer-promise-reject-errors': 'error',
     'radix': 'error',
     'vars-on-top': 'off',
     'wrap-iife': 'error',
@@ -130,6 +132,7 @@ module.exports = {
     'callback-return': 'off',
     'global-require': 'off',
     'handle-callback-err': 'error',
+    'no-buffer-constructor': 'error',
     'no-mixed-requires': 'error',
     'no-new-require': 'error',
     'no-path-concat': 'error',
@@ -214,6 +217,7 @@ module.exports = {
     'spaced-comment': 'off',
     'unary-bom': 'off',
     'wrap-regex': 'off',
+    'switch-colon-spacing': ['error', { 'after': true, 'before': false }],
 
     // ES2015
     'arrow-body-style': 'off',

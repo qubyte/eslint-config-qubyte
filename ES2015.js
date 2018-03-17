@@ -19,6 +19,9 @@ module.exports = {
     'rest-spread-spacing': ['error', 'never'],
     'sort-imports': 'off',
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['error', 'after'],
+    'lines-between-class-members': ['error', 'always'],
+    'implicit-arrow-linebreak': ['error', 'beside'],
+    'template-tag-spacing': ['error', 'never']
   }
 };
