@@ -140,6 +140,7 @@ module.exports = {
     'no-process-exit': 'off',
     'no-restricted-modules': 'off',
     'no-sync': 'error',
+    'no-buffer-constructor': 'error',
 
     // stylistic issues
     'array-bracket-spacing': 'error',
