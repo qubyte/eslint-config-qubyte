@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: 'eslint-config-qubyte',
+  extends: require('path').join(__dirname, 'index.js'),
   env: {
     es6: true
   },

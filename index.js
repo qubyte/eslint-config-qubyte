@@ -238,6 +238,9 @@ module.exports = {
     'no-useless-rename': 'error',
 
     // warn on TODO comments
-    'no-warning-comments': ['warn', { terms: ['todo'], location: 'anywhere' }]
+    'no-warning-comments': ['warn', { terms: ['todo'], location: 'anywhere' }],
+
+    // https://github.com/eslint/eslint/issues/11899
+    'require-atomic-updates': 'off'
   }
 };
