@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: 'eslint-config-qubyte/ES2015',
+  extends: require('path').join(__dirname, 'ES2015'),
   parserOptions: {
     ecmaVersion: 2017
   },

@@ -2,5 +2,5 @@
   "env": {
     "node": true
   },
-  "extends": "./index.js"
+  "extends": "./ES2019.js"
 }
