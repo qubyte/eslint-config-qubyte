@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: require('path').join(__dirname, 'ES2020'),
-  parserOptions: {
-    ecmaVersion: 2021
+  env: {
+    es2021: true
   }
 };
