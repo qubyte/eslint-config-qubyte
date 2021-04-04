@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-qubyte",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "My personal linter configs.",
   "main": "index.js",
   "scripts": {
