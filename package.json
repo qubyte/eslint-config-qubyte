@@ -6,6 +6,9 @@
   "scripts": {
     "test": "eslint ."
   },
+  "files": [
+    "ES*.js"
+  ],
   "repository": "github:qubyte/eslint-config-qubyte",
   "keywords": [
     "lint",
