@@ -36,21 +36,34 @@ As before the environment needs to be specified. Since Node 6+ has good ES2015
 feature coverage, it makes sense to use ES2015 features. A sharable config is
 provided for ES2015 code:
 
-```javascript
+```json
 {
-    "env": {
-        "node": true
-    }
-    "extends": "qubyte/ES2015"
+  "env": {
+    "node": true
+  },
+  "extends": "qubyte/ES2015"
 }
 ```
 
 Internally this config extends the base qubyte config.
 
-## ES2017 and ES2018
+## ES2017, ES2018, ES2019, ES2020, ES2021
 
-These are mostly the same as ES2015, but with updated parser configuration, so
-that ESLint doesn't fall over around things like object spreading.
+These are mostly the same as ES2015, but with updated parser configuration and
+globals so that ESLint doesn't fall over around things like object spreading.
+
+## ES module variants
+
+The variants with `-module` in their names are set up for ES module based
+projects. These are provided because setting `parserOptions` in an extending
+ESLint config wipes out the `parserOptions` it provides rather than merging
+them, and this is easy to forget to handle. to use, for example for ES2021:
+
+```json
+{
+  "extends": "qubyte/ES2021-module"
+}
+```
 
 ## Tests
 
@@ -62,12 +75,12 @@ rules that become noisy in tests. Such a file might look like:
 
 ```javascript
 {
-    "env": {
-        "mocha": true
-    },
-    "rules": {
-        "max-statements": 'off',
-        "max-lines": 'off'
-    }
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "max-statements": 'off',
+    "max-lines": 'off'
+  }
 }
 ```
