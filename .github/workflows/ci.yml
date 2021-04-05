@@ -2,19 +2,19 @@ name: CI
 on:
   push:
     branches:
-    - master
+    - main
   pull_request:
     branches:
-    - master
+    - main
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
-    - name: use node 10
-      uses: actions/setup-node@v1
+      uses: actions/checkout@main
+    - name: use node 14
+      uses: actions/setup-node@v2
       with:
-        version: 10.x
+        version: 14.x
     - run: npm ci
     - run: npm test

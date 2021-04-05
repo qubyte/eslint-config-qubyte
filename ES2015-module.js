@@ -2,10 +2,8 @@
 
 module.exports = {
   extends: require('path').join(__dirname, 'ES2015.js'),
-  env: {
-    es2017: true
-  },
-  rules: {
-    'require-await': 'error'
+  parserOptions: {
+    ecmaVersion: 2015,
+    sourceType: 'module'
   }
 };
