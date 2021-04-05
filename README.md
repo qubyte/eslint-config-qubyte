@@ -5,7 +5,7 @@ Common ESLint [shareable config][1] files for qubyte. Originally based on
 
 Install into your project:
 
-```
+```shell
 npm install --save eslint eslint-config-qubyte
 ```
 
@@ -15,12 +15,12 @@ npm install --save eslint eslint-config-qubyte
 
 Make a `.eslintrc.json` config file with the following in:
 
-```javascript
+```json
 {
-    "env": {
-        "browser": true
-    }
-    "extends": "qubyte"
+  "env": {
+    "browser": true
+  },
+  "extends": "qubyte"
 }
 ```
 
@@ -73,14 +73,14 @@ file than healthy production code etc. It's recommended to have a
 config found in a directory above automatically, so you only need to turn off
 rules that become noisy in tests. Such a file might look like:
 
-```javascript
+```json
 {
   "env": {
     "mocha": true
   },
   "rules": {
-    "max-statements": 'off',
-    "max-lines": 'off'
+    "max-statements": "off",
+    "max-lines": "off"
   }
 }
 ```
