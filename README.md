@@ -33,7 +33,7 @@ rules as you like.
 ## ES2015 Node.js project.
 
 As before the environment needs to be specified. Since Node 6+ has good ES2015
-feature coverage, it makes sense to use ES2015 features. A sharable config is
+feature coverage, it makes sense to use ES2015 features. A shareable config is
 provided for ES2015 code:
 
 ```json
@@ -47,7 +47,7 @@ provided for ES2015 code:
 
 Internally this config extends the base qubyte config.
 
-## ES2017, ES2018, ES2019, ES2020, ES2021
+## ES2017, ES2018, ES2019, ES2020, ES2021, ES2022
 
 These are mostly the same as ES2015, but with updated parser configuration and
 globals so that ESLint doesn't fall over around things like object spreading.
@@ -57,7 +57,7 @@ globals so that ESLint doesn't fall over around things like object spreading.
 The variants with `-module` in their names are set up for ES module based
 projects. These are provided because setting `parserOptions` in an extending
 ESLint config wipes out the `parserOptions` it provides rather than merging
-them, and this is easy to forget to handle. to use, for example for ES2021:
+them, and this is easy to forget to handle. To use, for example for ES2021:
 
 ```json
 {
