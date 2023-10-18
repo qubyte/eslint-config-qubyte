@@ -1,19 +1,12 @@
-/* eslint no-warning-comments: off, quote-props: off */
-
-'use strict';
-
-module.exports = {
-  extends: 'eslint:recommended',
-  globals: {
-    // well supported ES2015 globals
-    Promise: true,
-    Map: true,
-    Set: true,
-    WeakMap: true,
-    WeakSet: true
+export default {
+  languageOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
+  linterOptions: {
+    reportUnusedDisableDirectives: true
   },
   rules: {
-    // possible errors
     'no-cond-assign': 'error',
     'no-console': 'error',
     'no-constant-condition': 'error',
@@ -49,17 +42,17 @@ module.exports = {
     'accessor-pairs': 'off',
     'array-callback-return': 'error',
     'block-scoped-var': 'off',
-    'complexity': ['error', 10],
+    complexity: ['error', 10],
     'consistent-return': 'off',
-    'curly': 'error',
+    curly: 'error',
     'default-case': 'error',
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
-    'eqeqeq': 'error',
+    eqeqeq: 'error',
     'guard-for-in': 'error',
     'no-alert': 'error',
     'no-caller': 'error',
-    'no-case-declarations': 'off',
+    'no-case-declarations': 'error',
     'no-div-regex': 'off',
     'no-else-return': 'error',
     'no-empty-function': 'off',
@@ -79,7 +72,6 @@ module.exports = {
     'no-iterator': 'error',
     'no-labels': 'off',
     'no-lone-blocks': 'error',
-    'no-loop-func': 'error',
     'no-magic-numbers': 'off',
     'no-multi-spaces': ['error', { exceptions: { Property: true, VariableDeclarator: true, ImportDeclaration: true } }],
     'no-multi-str': 'off',
@@ -106,13 +98,11 @@ module.exports = {
     'no-void': 'error',
     'no-with': 'error',
     'prefer-promise-reject-errors': 'error',
-    'radix': 'error',
+    radix: 'error',
     'vars-on-top': 'off',
     'wrap-iife': 'error',
-    'yoda': 'error',
-
-    // strict mode
-    'strict': ['error', 'safe'],
+    yoda: 'error',
+    'no-useless-catch': 'error',
 
     // variables
     'init-declarations': 'off',
@@ -121,7 +111,7 @@ module.exports = {
     'no-label-var': 'error',
     'no-restricted-globals': 'off',
     'no-shadow': 'off',
-    'no-shadow-restricted-names': 'off',
+    'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
     'no-undef-init': 'off',
     'no-undefined': 'off',
@@ -145,7 +135,7 @@ module.exports = {
     'array-bracket-spacing': 'error',
     'block-spacing': 'error',
     'brace-style': ['error', '1tbs'],
-    'camelcase': ['error', { properties: 'never' }],
+    camelcase: ['error', { properties: 'never' }],
     'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', { before: false, after: true }],
     'comma-style': ['error', 'last'],
@@ -157,7 +147,7 @@ module.exports = {
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
-    'indent': ['error', 2],
+    indent: ['error', 2],
     'jsx-quotes': 'off',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'keyword-spacing': 'error',
@@ -203,9 +193,9 @@ module.exports = {
     'operator-linebreak': ['error', 'none'],
     'padded-blocks': ['error', 'never'],
     'quote-props': ['error', 'as-needed'],
-    'quotes': ['error', 'single'],
+    quotes: ['error', 'single'],
     'require-jsdoc': 'off',
-    'semi': 'error',
+    semi: 'error',
     'semi-spacing': ['error', { before: false, after: true }],
     'sort-keys': 'off',
     'sort-vars': 'off',
@@ -217,7 +207,21 @@ module.exports = {
     'spaced-comment': 'off',
     'unary-bom': 'off',
     'wrap-regex': 'off',
-    'switch-colon-spacing': ['error', { 'after': true, 'before': false }],
+    'switch-colon-spacing': ['error', { after: true, before: false }],
+
+    // Recommended
+    'for-direction': 'error',
+    'getter-return': 'error',
+    'no-async-promise-executor': 'error',
+    'no-compare-neg-zero': 'error',
+    'no-dupe-else-if': 'error',
+    'no-import-assign': 'error',
+    'no-loss-of-precision': 'error',
+    'no-misleading-character-class': 'error',
+    'no-nonoctal-decimal-escape': 'error',
+    'no-setter-return': 'error',
+    'no-unsafe-optional-chaining': 'error',
+    'no-useless-backreference': 'error',
 
     // ES2015
     'arrow-body-style': 'off',
@@ -237,10 +241,29 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
 
-    // warn on TODO comments
+    // warn on to do comments
     'no-warning-comments': ['warn', { terms: ['todo'], location: 'anywhere' }],
 
-    // https://github.com/eslint/eslint/issues/11899
-    'require-atomic-updates': 'off'
+    // ES2015
+    'no-var': 'error',
+    'no-loop-func': 'off',
+    'object-shorthand': 'error',
+    'prefer-arrow-callback': 'error',
+    'prefer-const': 'error',
+    'prefer-reflect': 'off',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+    'require-yield': 'error',
+    'rest-spread-spacing': ['error', 'never'],
+    'sort-imports': 'off',
+    'template-curly-spacing': ['error', 'never'],
+    'yield-star-spacing': ['error', 'after'],
+    'lines-between-class-members': ['error', 'always'],
+    'implicit-arrow-linebreak': ['error', 'beside'],
+    'template-tag-spacing': ['error', 'never'],
+
+    // ES 2017
+    'require-await': 'error'
   }
 };

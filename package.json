@@ -2,13 +2,14 @@
   "name": "eslint-config-qubyte",
   "version": "5.0.0",
   "description": "My personal linter configs.",
+  "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
     "test": "eslint ."
   },
-  "files": [
-    "ES*.js"
-  ],
   "repository": "github:qubyte/eslint-config-qubyte",
   "keywords": [
     "lint",
@@ -23,6 +24,6 @@
   },
   "homepage": "https://github.com/qubyte/eslint-config-qubyte#readme",
   "devDependencies": {
-    "eslint": "^8.14.0"
+    "eslint": "^8.51.0"
   }
 }
